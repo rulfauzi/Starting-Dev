@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{c928e6cf-65ca-4fc8-89d9-ab7fe1ffe34e}</ProjectGuid>
+        <ProjectHome>.</ProjectHome>
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile />
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <EnableTypeScript>true</EnableTypeScript>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="nest-cli.json" />
+        <Content Include="package-lock.json" />
+        <Content Include="package.json" />
+        <Content Include="tsconfig.build.json" />
+        <None Include="tsconfig.json" />
+        <Content Include="README.md" />
+        <None Include="prisma\seed.ts" />
+        <None Include="src\app.module.ts" />
+        <None Include="src\main.ts" />
+        <Content Include="test\jest-e2e.json" />
+        <None Include="test\app.e2e-spec.ts" />
+        <None Include="test\app.resolver.e2e-spec.ts" />
+        <Content Include="prisma\migrations\20200724181653-init\steps.json" />
+        <Content Include="prisma\migrations\20200724181653-init\README.md" />
+        <None Include="src\controllers\app.controller.spec.ts" />
+        <None Include="src\controllers\app.controller.ts" />
+        <None Include="src\decorators\user.decorator.ts" />
+        <None Include="src\guards\gql-auth.guard.ts" />
+        <None Include="src\models\auth.model.ts" />
+        <None Include="src\models\model.model.ts" />
+        <None Include="src\models\post.model.ts" />
+        <None Include="src\models\token.model.ts" />
+        <None Include="src\models\user.model.ts" />
+        <None Include="src\resolvers\app.resolver.spec.ts" />
+        <None Include="src\resolvers\app.resolver.ts" />
+        <None Include="src\services\app.service.ts" />
+        <None Include="src\services\auth.service.ts" />
+        <None Include="src\services\password.service.ts" />
+        <None Include="src\services\prisma.service.ts" />
+        <None Include="src\services\user.service.ts" />
+        <None Include="src\common\order\order-direction.ts" />
+        <None Include="src\common\order\order.ts" />
+        <None Include="src\common\pagination\page-info.model.ts" />
+        <None Include="src\common\pagination\pagination.args.ts" />
+        <None Include="src\common\pagination\pagination.ts" />
+        <None Include="src\common\scalars\date.scalar.ts" />
+        <None Include="src\models\args\post-id.args.ts" />
+        <None Include="src\models\args\user-id.args.ts" />
+        <None Include="src\models\inputs\post-order.input.ts" />
+        <None Include="src\models\pagination\post-connection.model.ts" />
+        <None Include="src\resolvers\auth\auth.module.ts" />
+        <None Include="src\resolvers\auth\auth.resolver.ts" />
+        <None Include="src\resolvers\auth\jwt.strategy.ts" />
+        <None Include="src\resolvers\post\post.module.ts" />
+        <None Include="src\resolvers\post\post.resolver.ts" />
+        <None Include="src\resolvers\user\user.module.ts" />
+        <None Include="src\resolvers\user\user.resolver.ts" />
+        <None Include="src\resolvers\auth\dto\jwt.dto.ts" />
+        <None Include="src\resolvers\auth\dto\login.input.ts" />
+        <None Include="src\resolvers\auth\dto\signup.input.ts" />
+        <None Include="src\resolvers\user\dto\change-password.input.ts" />
+        <None Include="src\resolvers\user\dto\update-user.input.ts" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include="ExistingNode" />
+        <Folder Include="graphql" />
+        <Folder Include="prisma" />
+        <Folder Include="prisma\migrations" />
+        <Folder Include="prisma\migrations\20200724181653-init" />
+        <Folder Include="src" />
+        <Folder Include="src\common" />
+        <Folder Include="src\common\order" />
+        <Folder Include="src\common\pagination" />
+        <Folder Include="src\common\scalars" />
+        <Folder Include="src\controllers" />
+        <Folder Include="src\decorators" />
+        <Folder Include="src\guards" />
+        <Folder Include="src\models" />
+        <Folder Include="src\models\args" />
+        <Folder Include="src\models\inputs" />
+        <Folder Include="src\models\pagination" />
+        <Folder Include="src\resolvers" />
+        <Folder Include="src\resolvers\auth" />
+        <Folder Include="src\resolvers\auth\dto" />
+        <Folder Include="src\resolvers\post" />
+        <Folder Include="src\resolvers\user" />
+        <Folder Include="src\resolvers\user\dto" />
+        <Folder Include="src\services" />
+        <Folder Include="test" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
